@@ -544,3 +544,47 @@ cc('K');
 cc('A');
 console.log(cc(4));
 // -2 Hold
+
+// Use the parseInt Function
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+console.log(convertToInteger("56"));
+// NaN
+
+// Use the parseInt Function with a Radix
+// Radix - specifies the base of a number in a string
+function convertToInteger(str) {
+  return parseInt(str, 2);  
+}
+
+console.log(convertToInteger("10011"));
+// 19
+
+// Use the Conditional (Ternary) Operator
+// condition ? statement-if-true : statement-if-false;
+
+function checkEqual(a, b) {
+  // if (a === b) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  // Using the ternary operator
+  return a === b ? true : false;
+  // Another simpler way
+  // return a === b;
+}
+
+console.log(checkEqual(1, 2));
+// false
+
+// Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+}
+
+console.log(checkSign(10));
+// positive
+
